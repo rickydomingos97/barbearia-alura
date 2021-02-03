@@ -165,7 +165,7 @@ td, th {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
-    clear: left; /* esse clear limpa o float para nao afetar os item abaixo dele*/
+	clear: left; /* esse clear limpa o float para nao afetar os item abaixo dele*/
 }
 
 .principal {
@@ -173,6 +173,7 @@ td, th {
 	background: #fefefe;
 	width: 940px;
 	margin: 0 auto;
+	color: #555555;
 }
 
 .principal p {
@@ -216,6 +217,14 @@ td, th {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0px #000;
+}
+
+.imagem-beneficios:hover  {
+    opacity: .3;
+    
 }
 
 .conteudo-beneficios {
@@ -244,6 +253,79 @@ td, th {
 	margin: 2em auto;
 }
 
-.principal p:not(#missao) {
+/* .principal p:not(#missao) {
 	color: white;
-}
+} */
+
+/* Mobile */
+	@media screen and (max-width: 480px) { 
+		.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+			width: auto;
+			margin: 1px0 10px;
+		}
+
+		header {
+			font-size: 22px;
+			text-align: center;
+		}
+		
+		nav a {
+			font-size: 20px;
+		}
+
+		nav a:active {
+			font-size: 20px;
+			color: #C78C19;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		nav {
+			position:static;
+		}
+
+		.lista-beneficios, imagem-beneficios {
+			width: 100%
+		}
+
+		.lista-beneficios, .imagem-beneficios {
+			width: 100%
+		}
+
+		/* PRODUTOS*/
+
+		.produtos {
+			width: 90%;
+			margin-top: -50px;
+		}
+
+		.produtos li {
+			width: 90%;
+			margin-top: 50px;
+		}
+
+		/* CONTATO */
+
+		.main-contato {
+			width: 158%;
+			margin: 25% 12px;
+		}
+
+		.checkbox {
+			font-size: 14px;
+		}
+
+		.enviar {
+			width: 59%;
+			align-items: center;
+		}
+
+		.horario {
+			width: 59%;
+		}
+	}
+
+	
+
